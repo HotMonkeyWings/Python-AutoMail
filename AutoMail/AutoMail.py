@@ -30,7 +30,7 @@ while 1:
     msg.add_attachment(file_data, maintype ='image', subtype = file_type,filename = file_name)
 
     with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
-        smtp.login('lndautomated@gmail.com','sfwibkqwtlatygxj')
+        smtp.login('email','password')
         smtp.send_message(msg)
         print(line[0])
         

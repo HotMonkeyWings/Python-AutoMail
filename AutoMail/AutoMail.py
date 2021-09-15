@@ -34,7 +34,7 @@ while 1:
     with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
         smtp.login('email','password')      # Enable access on https://myaccount.google.com/lesssecureapps
         smtp.send_message(msg)
-        print(line[0])
+        print('Mail has been sent to',line[0])
         
 
     
